@@ -29,6 +29,14 @@ namespace UnitTest1
 
 			Assert::AreEqual(expected, actual);
 		}
-		
+		TEST_METHOD(TestMethod3Draw) //testing both players picking scissors
+		{
+			char player1[] = "scissors";
+			char player2[] = "scissors";
+			char expected[] = "Draw";
+			char* actual = Game(player1, player2);
+
+			Assert::AreEqual(expected, actual);
+		}
 	};
 }
