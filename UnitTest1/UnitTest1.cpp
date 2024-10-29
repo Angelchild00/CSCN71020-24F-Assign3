@@ -20,6 +20,15 @@ namespace UnitTest1
 
 			Assert::AreEqual(expected, actual);
 		}
+		TEST_METHOD(TestMethod2Player2) //testing player two winning with paper v scissors
+		{
+			char player1[] = "paper";
+			char player2[] = "scissors";
+			char expected[] = "Player2";
+			char* actual = Game(player1, player2);
+
+			Assert::AreEqual(expected, actual);
+		}
 		
 	};
 }
