@@ -38,5 +38,23 @@ namespace UnitTest1
 
 			Assert::AreEqual(expected, actual);
 		}
+		TEST_METHOD(TestMethod3Invalid) //testing invalid input using letters
+		{
+			char player1[] = "abscd";
+			char player2[] = "scissors";
+			char expected[] = "Invalid";
+			char* actual = Game(player1, player2);
+
+			Assert::AreEqual(expected, actual);
+		}
+		TEST_METHOD(TestMethod4Invalid) //testing invalid input using numbers
+		{
+			char player1[] = "paper";
+			char player2[] = "123456546";
+			char expected[] = "Invalid";
+			char* actual = Game(player1, player2);
+
+			Assert::AreEqual(expected, actual);
+		}
 	};
 }

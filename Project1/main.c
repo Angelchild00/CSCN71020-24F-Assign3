@@ -36,5 +36,6 @@ char* Game(char* player1, char* player2) {
 		return "Player2";
 	}
 	
+	return "Invalid";
 	
 }
