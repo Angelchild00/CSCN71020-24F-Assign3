@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "CppUnitTest.h"
 
-extern "C" char Game(char player1, char player2);
+extern "C" char* Game(char* player1, char* player2);
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
